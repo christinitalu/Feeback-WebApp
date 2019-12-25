@@ -8,10 +8,10 @@ ENV = 'prod'
 
 if ENV == 'dev':
     app.debug = True
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:123456@localhost/lexus'
+    app.config['SQLALCHEMY_DATABASE_URI'] = ''
 else:
     app.debug = False
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://uwfepehcvqnclw:4d4144adbfc36bddce5d4f5370f04fb15f2bbef77711d01995079ae327b33f8e@ec2-54-197-241-96.compute-1.amazonaws.com:5432/ddtmkh9aevosh'
+    app.config['SQLALCHEMY_DATABASE_URI'] = ''
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
